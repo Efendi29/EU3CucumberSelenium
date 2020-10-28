@@ -1,5 +1,5 @@
 Feature: Contacts page
-
+  @smoke
   Scenario:Default page number
     Given the user is on the login page
     And the user enters the driver information
@@ -12,7 +12,7 @@ Feature: Contacts page
     And the user enters the sales manager information
     When the user navigates to "Activities" "Calendar Events"
     Then the title contains "Calendars"
-
+  @smoke
   Scenario: Menu Options
     Given the user is on the login page
     And the user logged in as "driver"
